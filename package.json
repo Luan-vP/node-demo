@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "A simple express server to handle requests for the Node + React course",
   "main": "index.js",
+  "engines": {
+    "node": "21.4.0",
+    "npm": "10.2.5"
+  },
   "scripts": {
     "test": "echo \"Error, no test specified\" && exit 1",
     "serve": "bun index.ts"

@@ -1,8 +1,9 @@
-const express = require('express');
+const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send({hi: 'there'});
+  res.send({ hi: "there" });
 });
 
-app.listen(5100);
+const PORT = 5000; // TODO update from Docker env var
+app.listen(PORT);
