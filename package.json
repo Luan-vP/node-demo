@@ -5,11 +5,13 @@
   "main": "index.js",
   "engines": {
     "node": "21.4.0",
-    "npm": "10.2.5"
+    "npm": "10.2.5",
+    "bun": "1.0.18"
   },
   "scripts": {
     "test": "echo \"Error, no test specified\" && exit 1",
-    "serve": "bun index.ts"
+    "start": "bun index.ts",
+    "build": "echo \"no build script available, please implement\" "
   },
   "author": "Luan-vP",
   "license": "MIT",
