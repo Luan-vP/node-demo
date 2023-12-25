@@ -10,4 +10,5 @@ app.get("/healthcheck", (req: any, res: any) => {
 });
 
 const PORT = process.env.PORT || 5100; // TODO update from Docker env var
+console.log(`Server started on port ${PORT}`);
 app.listen(PORT);

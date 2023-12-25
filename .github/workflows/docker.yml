@@ -28,5 +28,6 @@ jobs:
           context: .
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/react-app-template:latest
+          build-args: PORT=5100
 
 permissions: write-all

@@ -30,5 +30,8 @@ COPY --from=prerelease /usr/src/app/index.ts .
 COPY --from=prerelease /usr/src/app/package.json .
 
 USER bun
-EXPOSE 5100/tcp
+
+ARG PORT=5100
+ENV PORT=${PORT}
+EXPOSE ${PORT}/tcp
 ENTRYPOINT [ "bun", "run", "index.ts"]
